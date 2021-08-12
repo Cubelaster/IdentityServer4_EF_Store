@@ -45,6 +45,7 @@ namespace IdentityServerAspNetIdentity.Services
                 new Claim("dummy", "Dummy"),
                 new Claim(JwtClaimTypes.Address, JsonSerializer.Serialize(address), IdentityServerConstants.ClaimValueTypes.Json),
                 new Claim("custom_claims", JsonSerializer.Serialize(custom_claims), IdentityServerConstants.ClaimValueTypes.Json),
+                new Claim("mvc_scope", JsonSerializer.Serialize(custom_claims), IdentityServerConstants.ClaimValueTypes.Json),
                 new Claim(JwtClaimTypes.Name, "Cubelaster"),
                 new Claim(JwtClaimTypes.GivenName, "Cubelaster"),
                 new Claim(JwtClaimTypes.FamilyName, "Cubelaster"),
